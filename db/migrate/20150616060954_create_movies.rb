@@ -1,0 +1,12 @@
+class CreateMovies < ActiveRecord::Migration
+  def change
+      create_table :movies do |t|
+      t.timestamps  null: false
+      t.string :title
+      t.string :lead
+      t.string :director
+      t.integer :release_date
+      t.boolean :in_theaters 
+    end
+  end
+end
